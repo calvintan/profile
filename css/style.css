@@ -32,7 +32,8 @@ header, section, footer {
 /* Components */
 /* Header */
 header {
-  background: url(../images/background.jpg);
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
