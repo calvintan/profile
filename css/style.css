@@ -80,6 +80,43 @@ header img {
   padding: 20px;
 }
 
+.special {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.speech-bubble {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 70px;
+  right: -50px;
+  background: #a0e55f;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 30px;
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+
+.speech-bubble:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #a0e55f;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transform: scale(.5) rotate(45deg);
+}
+
+.special:hover .speech-bubble {
+  opacity: 1;
+}
+
 /* Section */
 section {
   flex: 1 0 auto;
